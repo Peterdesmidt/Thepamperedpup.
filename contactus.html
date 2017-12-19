@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+<div class="menu-item"><a href="contactus.html"></a>Contact Us</div>
+      <div class="menu-item"><a href="Products.html">Products & Services</a></div>
+      <div class="menu-item"><a href="pages/main.html"></a>Home</div>
+    </div> 
+
+     
+  <div class="sidebar-two">
+    <h2> Dog Cleaning </h2> 
+    <p><b>Mon-Fri</b>9:00-5:00</p>
+    <p><b> Sat</b>8:00-2:00</p>
+  <h2>Doggy-Daycare</h2>
+   <p><b>Mon-Fri</b>6:00-7:30</p>
+    <p><b> Sat-Sun</b>6:00-12:00</p>
+    <h2>Overnight boarding </h2>
+  <p><b>Mon-Sun </b>Drop-off 9:00-1:00 <br>
+  Pick up 3:00-4:00 </p>
+   
+  <div class="column-layout">
+      <div class="main-column">
+        <h2> Location</h2>
+        <p> 2245 Washington Street <br> 
+        Madison Wisconsin 53713</p>
+        <p><b>Phone:</b> 608-555-5534</p>
+        <p><b> Email:</b>info@pamperedpup.com</p>
+        
+        </div>
+  
+  
+   
+  </div> 
+  <div id="map"></div>
+ 
+<div class="menu-item"> <a href="https://goo.gl/forms/3yEmRqC0kx1VhgLH2">Feedback</a>
+
+ <div class="menu-layout">
+      
+
+
+<script>
+      function initMap() {
+        var uluru = {lat: 43.0731  , lng: 89.4012 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCc-brYWi0Ozwjggj3SvBW9NcDKb-DzFL4
+&callback=initMap">
+    </script>
+  </body>
+
+</html>
